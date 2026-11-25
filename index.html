@@ -93,8 +93,8 @@ header nav{display:flex;flex-wrap:wrap;gap:28px}
 .claims div{display:flex;flex-wrap:wrap;gap:10px 36px;font-size:14px;color:var(--ink-muted);border-top:1px solid var(--line);padding-top:22px}
 
 .ingr{display:flex;flex-wrap:wrap;background:var(--blush)}
-.ingr figure{margin:0;flex:1 1 420px;min-height:520px;max-height:620px;background:#F6F2F0;display:flex;align-items:center;justify-content:center}
-.ingr figure img{width:100%;height:100%;max-height:620px;object-fit:contain;mix-blend-mode:multiply;padding:6%;box-sizing:border-box}
+.ingr figure{margin:0;flex:1.25 1 480px;min-height:600px;max-height:780px;background:#F6F2F0;display:flex;align-items:center;justify-content:center}
+.ingr figure img{width:100%;height:100%;max-height:780px;object-fit:contain;mix-blend-mode:multiply;padding:3%;box-sizing:border-box}
 .ingr .txt{flex:1 1 480px;padding:clamp(36px,4.5vw,64px) clamp(20px,4vw,64px);display:flex;flex-direction:column;justify-content:center;gap:32px}
 .big{font-size:clamp(36px,4vw,60px);line-height:1;letter-spacing:-.03em}
 dl{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;font-size:14px;line-height:1.5}
@@ -135,8 +135,8 @@ blockquote{margin:0;font-size:clamp(30px,3.6vw,52px);line-height:1.12;letter-spa
 .ico-stroke .dot{fill:currentColor;stroke:none}
 .ico-fill{fill:currentColor}
 .handle{text-transform:none;border-bottom:1px solid var(--ink);padding-bottom:2px}
-.strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
-.strip figure{margin:0;aspect-ratio:3/4;overflow:hidden}
+.strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.strip figure{margin:0;aspect-ratio:4/5;overflow:hidden}
 .strip img{width:100%;height:100%;object-fit:cover}
 
 footer{background:var(--blush)}
@@ -156,11 +156,9 @@ footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:co
 .fbot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;font-size:13px;color:var(--ink-soft)}
 .fbot img{height:40px;width:auto}
 
-@media (max-width:1000px){.strip{grid-template-columns:repeat(3,minmax(0,1fr))}.strip figure:nth-child(n+4){display:none}}
-@media (max-width:700px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}.strip figure:nth-child(4){display:block}}
 @media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card.feature{grid-template-columns:1fr}.card.feature>*{grid-column:1!important;grid-row:auto!important}.card.feature .slide{aspect-ratio:1/1}.card.feature .pshot img{padding:2%}}
 @media (max-width:700px){.grid{grid-template-columns:1fr}.hero{height:clamp(520px,72vh,680px)}.hero .hs-products{object-position:36% 30%!important}
-  .ingr figure{min-height:360px}
+  .ingr figure{min-height:420px}
   dl{grid-template-columns:1fr}
   .products{padding-top:72px}
   .claims{padding-bottom:72px}
@@ -209,7 +207,6 @@ footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:co
       <article class="card feature">
         <div class="gallery">
           <div class="track" tabindex="0" aria-label="Multivitamin Hair Mask images">
-            <div class="slide"><img src="img/campaign/library/hair-mask-wet-hair.jpg" alt="Applying SWAY glaze Multivitamin Hair Mask to wet hair, jar in hand" style="object-position:50% 100%;transform:scale(1.14);transform-origin:54% 100%"></div>
             <div class="slide pshot"><img src="img/products/hair-mask-1.jpg" alt="SWAY glaze Multivitamin Hair Mask, 250 ml"></div>
           </div>
           <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
@@ -226,8 +223,6 @@ footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:co
         <div class="gallery">
           <div class="track" tabindex="0" aria-label="Multivitamin Shampoo images">
             <div class="slide pshot"><img src="img/products/shampoo-1.jpg" alt="SWAY glaze Multivitamin Shampoo, 250 ml"></div>
-            <div class="slide pshot"><img src="img/products/shampoo-conditioner-1.jpg" alt="SWAY glaze Multivitamin Shampoo and Conditioner"></div>
-            <div class="slide"><img src="img/sjampo-skum.jpg" alt="Shampoo lather in blonde hair" loading="lazy"></div>
           </div>
           <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
           <button class="gnav next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
@@ -243,8 +238,6 @@ footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:co
         <div class="gallery">
           <div class="track" tabindex="0" aria-label="Multivitamin Conditioner images">
             <div class="slide pshot"><img src="img/products/conditioner-1.jpg" alt="SWAY glaze Multivitamin Conditioner, 250 ml"></div>
-            <div class="slide pshot"><img src="img/products/shampoo-conditioner-1.jpg" alt="SWAY glaze Multivitamin Shampoo and Conditioner"></div>
-            <div class="slide"><img src="img/kam-vatt-har.jpg" alt="Comb through wet hair" loading="lazy"></div>
           </div>
           <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
           <button class="gnav next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
@@ -260,8 +253,6 @@ footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:co
         <div class="gallery">
           <div class="track" tabindex="0" aria-label="Hair Oil Serum images">
             <div class="slide pshot"><img src="img/products/hair-serum-1.jpg" alt="SWAY glaze Hair Oil Serum, 50 ml"></div>
-            <div class="slide pshot"><img src="img/products/all-packs-1.jpg" alt="The full SWAY glaze routine"></div>
-            <div class="slide"><img src="img/krollete-har.jpg" alt="Curly hair" loading="lazy"></div>
           </div>
           <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
           <button class="gnav next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
@@ -281,7 +272,7 @@ footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:co
   </section>
 
   <section id="ingredienser" class="ingr">
-    <figure><img src="img/products/all-packs-2.jpg" alt="The full SWAY glaze routine: shampoo, conditioner, hair mask and hair oil serum" loading="lazy"></figure>
+    <figure><img src="img/products/all-packs-2-tight.jpg" alt="The full SWAY glaze routine: shampoo, conditioner, hair mask and hair oil serum" loading="lazy"></figure>
     <div class="txt">
       <h2 class="big">multivitamins<br>for your hair.</h2>
       <dl>
@@ -334,11 +325,9 @@ footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:co
       </div>
     </div>
     <div class="strip">
-      <figure><img src="img/kam-vatt-har.jpg" alt="Comb through wet hair" loading="lazy"></figure>
-      <figure><img src="img/sophie.jpg" alt="Sophie Stray" loading="lazy"></figure>
-      <figure><img src="img/sophie-studio.jpg" alt="Sophie Stray in the studio" loading="lazy"></figure>
-      <figure><img src="img/sjampo-skum.jpg" alt="Shampoo lather in blonde hair" loading="lazy"></figure>
-      <figure><img src="img/krollete-har.jpg" alt="Curly hair" loading="lazy"></figure>
+      <figure><img src="img/campaign/bw/bw-standing.jpg" alt="Long, voluminous waves in motion, black and white" loading="lazy"></figure>
+      <figure><img src="img/campaign/bw/bw-lying.jpg" alt="Long, glossy waves, black and white" loading="lazy"></figure>
+      <figure><img src="img/campaign/bw/bw-rollers.jpg" alt="Hair set in rollers, black and white" loading="lazy"></figure>
     </div>
   </section>
 </main>
