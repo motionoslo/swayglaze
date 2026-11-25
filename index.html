@@ -1,0 +1,388 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SWAY glaze | Multivitamin Hair Care</title>
+<meta name="description" content="SWAY glaze is a complete hair routine with vitamins, amino acids and vegan keratin, developed with Sophie Stray. Launching autumn 2026, exclusively at Lyko.">
+<meta property="og:title" content="SWAY glaze | Multivitamin Hair Care">
+<meta property="og:description" content="A complete hair routine with vitamins, amino acids and vegan keratin. Exclusively at Lyko.">
+<meta property="og:image" content="img/campaign/hero-products.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#4A1C2C; --ink-soft:#6E4352; --ink-muted:#7A5562;
+  --bg:#FCFAF8; --blush:#F3E1E3; --rose:#E9C9D1; --mint:#DCEAE1; --sand:#F4E6CC;
+  --line:#E7D9D6; --dark:#2B2224;
+  --pad:clamp(16px,3vw,40px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;text-transform:lowercase;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration:none}
+a:hover{color:#8A3A55}
+img{display:block;max-width:100%}
+.wrap{max-width:1600px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.link{border-bottom:1px solid var(--ink);padding-bottom:2px}
+h1,h2,h3{font-weight:400;margin:0}
+
+.bar{background:#5B2036;color:#FFFFFF;text-align:center;font-size:13px;padding:10px 16px}
+header .wrap{padding-top:22px;padding-bottom:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;font-size:14px}
+header nav{display:flex;flex-wrap:wrap;gap:28px}
+
+.hero{position:relative;height:clamp(520px,47vw,92vh);background:var(--dark);overflow:hidden}
+.hero .hs{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}
+.hero .hs.on{opacity:1}
+.hdots{position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center;gap:8px}
+.hdots i{width:7px;height:7px;border-radius:50%;background:rgba(252,250,248,.45)}
+.hdots i.on{background:#FCFAF8}
+.hero .logo{position:absolute;z-index:2;left:var(--pad);top:clamp(16px,2.4vw,36px);width:clamp(110px,11vw,165px);height:auto;pointer-events:none}
+
+.intro{padding-top:40px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px}
+.intro h1{font-size:clamp(44px,6vw,92px);line-height:.95;letter-spacing:-.035em;flex:1 1 560px}
+.intro div{flex:0 1 380px;display:flex;flex-direction:column;gap:18px}
+.intro p{margin:0;font-size:15px;line-height:1.55}
+.btn{align-self:flex-start;background:var(--ink);color:var(--bg);padding:14px 26px;border-radius:6px;font-size:14px}
+.btn:hover{background:#6A2C42;color:var(--bg)}
+
+.products{padding-top:120px;padding-bottom:40px;display:flex;flex-direction:column;gap:28px}
+.products h2,.social h2{font-size:28px;letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 12px}
+.card{display:flex;flex-direction:column;gap:12px;min-width:0}
+.card.feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);column-gap:48px;row-gap:12px;align-content:end}
+.card.feature>.gallery{grid-column:1;grid-row:1/span 6}
+.card.feature>:not(.gallery){grid-column:2}
+.card.feature>.row{align-self:end}
+.card.feature .slide{aspect-ratio:4/3}
+.card.feature h3{font-size:22px}
+.card.feature .row{font-size:18px}
+.card .tile{aspect-ratio:1/1.12;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+.ph{border:1px dashed rgba(74,28,44,.4);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;font-size:12px;padding:10px}
+.ph span+span{opacity:.7}
+.gallery{position:relative}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;outline-offset:-2px}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:start;aspect-ratio:1/1;overflow:hidden}
+.slide img{width:100%;height:100%;object-fit:cover}
+.pshot{background:#F6F2F0}
+.pshot img{object-fit:contain;mix-blend-mode:multiply;padding:6%;box-sizing:border-box}
+.gnav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(252,250,248,.85);color:var(--ink);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .2s}
+.gnav svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6}
+.gnav.prev{left:12px}.gnav.next{right:12px}
+.gallery:hover .gnav,.gnav:focus-visible{opacity:1}
+.gnav[disabled]{opacity:0!important;pointer-events:none}
+.dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:6px;pointer-events:none}
+.dots i{width:6px;height:6px;border-radius:50%;background:rgba(74,28,44,.3)}
+.dots i.on{background:var(--ink)}
+@media (hover:none){.gnav{opacity:1;width:38px;height:38px}}
+.card .row{display:flex;justify-content:space-between;gap:16px;font-size:15px}
+.card h3{font-size:15px;font-weight:500}
+.card .step{font-size:12px;color:var(--ink-muted)}
+.card .result{font-size:14px;line-height:1.5}
+.card .result b{font-weight:500}
+.card .use{font-size:13px;display:inline-flex;align-items:center;gap:8px}
+.card .use::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink)}
+.card p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-muted)}
+
+.claims{padding-top:48px;padding-bottom:120px}
+.claims div{display:flex;flex-wrap:wrap;gap:10px 36px;font-size:14px;color:var(--ink-muted);border-top:1px solid var(--line);padding-top:22px}
+
+.ingr{display:flex;flex-wrap:wrap;background:var(--blush)}
+.ingr figure{margin:0;flex:1 1 420px;min-height:520px;max-height:620px;background:#F6F2F0;display:flex;align-items:center;justify-content:center}
+.ingr figure img{width:100%;height:100%;max-height:620px;object-fit:contain;mix-blend-mode:multiply;padding:6%;box-sizing:border-box}
+.ingr .txt{flex:1 1 480px;padding:clamp(36px,4.5vw,64px) clamp(20px,4vw,64px);display:flex;flex-direction:column;justify-content:center;gap:32px}
+.big{font-size:clamp(36px,4vw,60px);line-height:1;letter-spacing:-.03em}
+dl{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;font-size:14px;line-height:1.5}
+dl div{border-top:1px solid rgba(74,28,44,.25);padding:16px 0}
+dt{font-weight:500}
+dd{margin:4px 0 0;color:var(--ink-soft)}
+
+.scent{padding-top:140px;padding-bottom:140px;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between}
+.scent h2{flex:1 1 420px}
+.scent .txt{flex:1 1 520px;max-width:640px;display:flex;flex-direction:column;gap:28px}
+.scent p{margin:0;font-size:17px;line-height:1.55}
+.notes{display:flex;flex-wrap:wrap;font-size:14px;border-top:1px solid var(--line)}
+.notes div{flex:1 1 160px;padding:16px 16px 0 0}
+.notes span{display:block;color:#8A6470;margin-bottom:4px}
+
+.about{display:flex;flex-wrap:wrap;align-items:center;max-width:1600px;margin:0 auto;padding:clamp(56px,7vw,110px) var(--pad);gap:clamp(32px,5vw,80px);box-sizing:border-box}
+.about figure{margin:0;flex:0 1 420px;aspect-ratio:4/5;overflow:hidden;background:var(--blush)}
+.about figure img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.about .txt{flex:1 1 480px;padding:0;display:flex;flex-direction:column;gap:24px;max-width:760px}
+.eyebrow{font-size:13px;color:var(--ink-muted)}
+.about p{margin:0;font-size:16px;line-height:1.6}
+.facts{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;font-size:14px}
+.facts li{border-top:1px solid var(--line);padding:14px 0;color:var(--ink-soft)}
+.facts span{display:block;color:var(--ink);font-weight:500;margin-bottom:2px}
+.quote{background:#fff;border-top:1px solid #EFE5E2;border-bottom:1px solid #EFE5E2}
+.quote .wrap{max-width:1100px;padding-top:140px;padding-bottom:140px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:32px}
+.avatar{width:96px;height:96px;border-radius:50%;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+blockquote{margin:0;font-size:clamp(30px,3.6vw,52px);line-height:1.12;letter-spacing:-.025em}
+.quote small{font-size:14px;color:var(--ink-muted)}
+
+.social{padding-top:120px;display:flex;flex-direction:column;gap:28px}
+.social .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;font-size:14px}
+.follow{display:flex;flex-wrap:wrap;gap:12px 28px}
+.follow a{display:inline-flex;align-items:center;gap:10px;min-height:44px}
+.follow svg{width:22px;height:22px;flex:0 0 auto}
+.ico-stroke{fill:none;stroke:currentColor;stroke-width:1.6}
+.ico-stroke .dot{fill:currentColor;stroke:none}
+.ico-fill{fill:currentColor}
+.handle{text-transform:none;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.strip figure{margin:0;aspect-ratio:3/4;overflow:hidden}
+.strip img{width:100%;height:100%;object-fit:cover}
+
+footer{background:var(--blush)}
+footer .wrap{padding-top:80px;padding-bottom:32px;display:flex;flex-direction:column;gap:72px}
+.ftop{display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px}
+.contact{flex:1 1 380px;max-width:480px;display:flex;flex-direction:column;gap:16px}
+.contact h2{font-size:22px;letter-spacing:-.01em}
+.contact p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-soft)}
+.mail{align-self:flex-start;font-size:15px;text-transform:none;border-bottom:1px solid var(--ink);padding-bottom:2px;min-height:24px}
+.field{display:flex;border-bottom:1px solid var(--ink);align-items:center}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.field input{flex:1 1 auto;min-height:48px;border:0;background:transparent;font:inherit;font-size:15px;color:var(--ink);padding:0;outline-offset:4px;text-transform:none}
+.field input::placeholder{color:var(--ink-muted);text-transform:lowercase}
+.field button{min-height:48px;border:0;background:transparent;font:inherit;font-size:14px;color:var(--ink);cursor:pointer;padding:0 0 0 16px;text-transform:lowercase}
+.fnav{display:flex;flex-wrap:wrap;gap:56px;font-size:14px}
+.fnav nav{display:flex;flex-direction:column;gap:10px}
+.fbot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;font-size:13px;color:var(--ink-soft)}
+.fbot img{height:40px;width:auto}
+
+@media (max-width:1000px){.strip{grid-template-columns:repeat(3,minmax(0,1fr))}.strip figure:nth-child(n+4){display:none}}
+@media (max-width:700px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}.strip figure:nth-child(4){display:block}}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card.feature{grid-template-columns:1fr}.card.feature>*{grid-column:1!important;grid-row:auto!important}.card.feature .slide{aspect-ratio:1/1}.card.feature .pshot img{padding:2%}}
+@media (max-width:700px){.grid{grid-template-columns:1fr}.hero{height:clamp(520px,72vh,680px)}.hero .hs-products{object-position:36% 30%!important}
+  .ingr figure{min-height:360px}
+  dl{grid-template-columns:1fr}
+  .products{padding-top:72px}
+  .claims{padding-bottom:72px}
+  .scent,.quote .wrap{padding-top:88px;padding-bottom:88px}
+  .social{padding-top:72px}
+  .about figure{flex-basis:100%;aspect-ratio:1/1}
+  .facts{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="bar">launching 7th of december, exclusively at lyko</div>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main menu">
+      <a href="#rutinen">the routine</a>
+      <a href="#ingredienser">ingredients</a>
+      <a href="#scent">scent</a>
+      <a href="#about">about sway</a>
+    </nav>
+    <a class="link" href="https://lyko.com/no" target="_blank" rel="noopener">get notified at lyko</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Campaign" aria-roledescription="carousel">
+    <img class="hs on hs-products" src="img/campaign/hero-products.jpg" alt="Long, glossy waves and SWAY glaze Multivitamin Shampoo and Conditioner" style="object-position:48% 30%">
+    <img class="hs" src="img/campaign/hero-back-centered.jpg" alt="Long, glossy waves seen from behind, with a pink comb" style="object-position:50% 30%">
+    <img class="logo" src="img/logo-burgundy.png" alt="SWAY glaze">
+    <div class="hdots" aria-hidden="true"><i class="on"></i><i></i></div>
+  </section>
+
+  <section class="wrap intro">
+    <h1>glazed. juicy.<br>nourished.</h1>
+    <div>
+      <p>a complete hair routine with vitamins, amino acids and vegan keratin. developed with sophie stray, for all hair types.</p>
+      <a class="btn" href="#rutinen">see the routine</a>
+    </div>
+  </section>
+
+  <section id="rutinen" class="wrap products">
+    <h2>the routine</h2>
+    <div class="grid">
+      <article class="card feature">
+        <div class="gallery">
+          <div class="track" tabindex="0" aria-label="Multivitamin Hair Mask images">
+            <div class="slide"><img src="img/campaign/library/hair-mask-wet-hair.jpg" alt="Applying SWAY glaze Multivitamin Hair Mask to wet hair, jar in hand" style="object-position:50% 100%;transform:scale(1.14);transform-origin:54% 100%"></div>
+            <div class="slide pshot"><img src="img/products/hair-mask-1.jpg" alt="SWAY glaze Multivitamin Hair Mask, 250 ml"></div>
+          </div>
+          <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="gnav next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          <div class="dots" aria-hidden="true"></div>
+        </div>
+        <div class="row"><h3>multivitamin hair mask</h3><span>299 kr</span></div>
+        <span class="step">02 treat</span>
+        <p>intensive nourishment for dry, damaged hair, with vegan keratin, amino acids, avocado and wheat germ oil</p>
+        <span class="result"><b>result:</b> silky, replenished hair that looks and feels stronger</span>
+        <span class="use">use once or twice a week</span>
+      </article>
+      <article class="card">
+        <div class="gallery">
+          <div class="track" tabindex="0" aria-label="Multivitamin Shampoo images">
+            <div class="slide pshot"><img src="img/products/shampoo-1.jpg" alt="SWAY glaze Multivitamin Shampoo, 250 ml"></div>
+            <div class="slide pshot"><img src="img/products/shampoo-conditioner-1.jpg" alt="SWAY glaze Multivitamin Shampoo and Conditioner"></div>
+            <div class="slide"><img src="img/sjampo-skum.jpg" alt="Shampoo lather in blonde hair" loading="lazy"></div>
+          </div>
+          <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="gnav next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          <div class="dots" aria-hidden="true"></div>
+        </div>
+        <div class="row"><h3>multivitamin shampoo</h3><span>299 kr</span></div>
+        <span class="step">01 cleanse</span>
+        <p>gently cleanses hair and scalp, with biotin, vitamin b5 and inositol</p>
+        <span class="result"><b>result:</b> fresh, soft hair and a healthy-looking scalp, for that juicy sway</span>
+        <span class="use">gentle enough for daily use</span>
+      </article>
+      <article class="card">
+        <div class="gallery">
+          <div class="track" tabindex="0" aria-label="Multivitamin Conditioner images">
+            <div class="slide pshot"><img src="img/products/conditioner-1.jpg" alt="SWAY glaze Multivitamin Conditioner, 250 ml"></div>
+            <div class="slide pshot"><img src="img/products/shampoo-conditioner-1.jpg" alt="SWAY glaze Multivitamin Shampoo and Conditioner"></div>
+            <div class="slide"><img src="img/kam-vatt-har.jpg" alt="Comb through wet hair" loading="lazy"></div>
+          </div>
+          <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="gnav next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          <div class="dots" aria-hidden="true"></div>
+        </div>
+        <div class="row"><h3>multivitamin conditioner</h3><span>299 kr</span></div>
+        <span class="step">02 treat</span>
+        <p>strengthens and softens with amino acids, vegan keratin and nourishing oils</p>
+        <span class="result"><b>result:</b> smooth, glossy lengths with long-lasting hydration</span>
+        <span class="use">gentle enough for daily use</span>
+      </article>
+      <article class="card">
+        <div class="gallery">
+          <div class="track" tabindex="0" aria-label="Hair Oil Serum images">
+            <div class="slide pshot"><img src="img/products/hair-serum-1.jpg" alt="SWAY glaze Hair Oil Serum, 50 ml"></div>
+            <div class="slide pshot"><img src="img/products/all-packs-1.jpg" alt="The full SWAY glaze routine"></div>
+            <div class="slide"><img src="img/krollete-har.jpg" alt="Curly hair" loading="lazy"></div>
+          </div>
+          <button class="gnav prev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="gnav next" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          <div class="dots" aria-hidden="true"></div>
+        </div>
+        <div class="row"><h3>hair oil serum</h3><span>299 kr</span></div>
+        <span class="step">03 leave-in</span>
+        <p>smooths frizz and adds shine with argan and jojoba oil, without weighing hair down</p>
+        <span class="result"><b>result:</b> smoothed frizz and a glossy, polished finish, the final glaze</span>
+        <span class="use">after washing, or anytime for a quick touch-up</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap claims" aria-label="Benefits">
+    <div><span>vegan</span><span>sulfate free</span><span>for all hair types</span><span>made in europe</span></div>
+  </section>
+
+  <section id="ingredienser" class="ingr">
+    <figure><img src="img/products/all-packs-2.jpg" alt="The full SWAY glaze routine: shampoo, conditioner, hair mask and hair oil serum" loading="lazy"></figure>
+    <div class="txt">
+      <h2 class="big">multivitamins<br>for your hair.</h2>
+      <dl>
+        <div><dt>serine + cysteine</dt><dd>amino acids that reinforce the hair fiber</dd></div>
+        <div><dt>vegan keratin</dt><dd>rice protein and hemp seed for strength</dd></div>
+        <div><dt>biotin, b5 and e</dt><dd>vitamins for healthy, vital-looking hair</dd></div>
+        <div><dt>argan + jojoba</dt><dd>smooth frizz and add shine</dd></div>
+        <div><dt>avocado + wheat germ</dt><dd>nourishing oils for softness and hydration</dd></div>
+        <div><dt>piroctone olamine</dt><dd>scalp care in the shampoo</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="scent" class="wrap scent" aria-labelledby="scent-title">
+    <h2 id="scent-title" class="big">fresh, fruity<br>and playful.</h2>
+    <div class="txt">
+      <p>one signature scent, across every product. crisp apple, juicy pear and neroli up top, a heart of melon, nectarine and strawberry, and a soft spun sugar finish that lingers.</p>
+      <div class="notes">
+        <div><span>top</span>neroli, violet leaves, pear, apple</div>
+        <div><span>heart</span>melon, nectarine, strawberry, jasmine</div>
+        <div><span>base</span>spun sugar</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-title">
+    <figure><img src="img/campaign/about-comb.jpg" alt="Combing long, glossy waves with a pink comb" loading="lazy" style="object-position:40% 25%"></figure>
+    <div class="txt">
+      <span class="eyebrow">about sway glaze</span>
+      <h2 id="about-title" class="big">born from<br>a love of hair.</h2>
+      <p>for sophie, hair has always been more than a routine. it is confidence, self-expression and the feeling of walking into a room as your best self. she wanted it all in one routine: real care, visible shine, textures that feel like a treat and a scent worth noticing. sway glaze is that routine.</p>
+      <p>inspired by the way she cares for her skin, sophie set out to give hair the same attention. every sway glaze formula is built on vitamins, amino acids, proteins and nourishing oils, so your hair doesn't just look beautiful, it feels cared for from root to tip.</p>
+      <p>scent was just as essential. sophie wanted a fragrance that leaves an impression, the kind that makes someone pause as you pass and ask what's in your hair. after nearly two years of creating, testing and perfecting, sway glaze is here, made for everyone who wants to love their hair a little more every day.</p>
+    </div>
+  </section>
+
+  <section id="sophie" class="quote">
+    <div class="wrap">
+      <blockquote>“care you can feel, shine you can see, a scent you won’t forget.”</blockquote>
+      <small>sophie stray</small>
+    </div>
+  </section>
+
+  <section class="social" aria-labelledby="social-title">
+    <div class="wrap head">
+      <h2 id="social-title">#swayglaze</h2>
+      <div class="follow">
+        <a href="https://www.instagram.com/swayglaze/" target="_blank" rel="noopener" aria-label="SWAYglaze on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-stroke"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.9" class="dot"/></svg><span class="handle">SWAYglaze</span></a>
+        <a href="https://www.tiktok.com/@sophiestray" target="_blank" rel="noopener" aria-label="Sophie Stray on TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg><span class="handle">Sophie Stray</span></a>
+      </div>
+    </div>
+    <div class="strip">
+      <figure><img src="img/kam-vatt-har.jpg" alt="Comb through wet hair" loading="lazy"></figure>
+      <figure><img src="img/sophie.jpg" alt="Sophie Stray" loading="lazy"></figure>
+      <figure><img src="img/sophie-studio.jpg" alt="Sophie Stray in the studio" loading="lazy"></figure>
+      <figure><img src="img/sjampo-skum.jpg" alt="Shampoo lather in blonde hair" loading="lazy"></figure>
+      <figure><img src="img/krollete-har.jpg" alt="Curly hair" loading="lazy"></figure>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <div class="contact">
+        <h2>let's talk hair.</h2>
+        <p>press, partnerships or a question about your routine. we read every message.</p>
+        <a class="btn" href="mailto:social@motionoslo.com?subject=SWAY%20glaze">send a message</a>
+      </div>
+      <div class="fnav">
+        <nav aria-label="Products"><a href="#rutinen">the routine</a><a href="#ingredienser">ingredients</a><a href="#scent">scent</a></nav>
+        <nav aria-label="About"><a href="#about">about sway glaze</a><a href="#sophie">sophie stray</a></nav>
+        <nav aria-label="Contact"><a href="mailto:social@motionoslo.com">contact</a><a href="https://lyko.com/no" target="_blank" rel="noopener">retailer: lyko</a></nav>
+      </div>
+    </div>
+    <div class="fbot">
+      <img src="img/logo.png" alt="SWAY glaze">
+      <span>© 2026 motion oslo as</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){var h=document.querySelectorAll('.hero .hs'),d=document.querySelectorAll('.hdots i'),k=0;
+if(h.length<2||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+setInterval(function(){if(document.hidden)return;h[k].classList.remove('on');d[k].classList.remove('on');k=(k+1)%h.length;h[k].classList.add('on');d[k].classList.add('on')},5000);})();
+</script>
+<script>
+document.querySelectorAll('.gallery').forEach(function(g,gi){
+  var t=g.querySelector('.track'),sl=t.children,d=g.querySelector('.dots'),p=g.querySelector('.prev'),n=g.querySelector('.next');
+  if(sl.length<2){p.remove();n.remove();return}
+  for(var i=0;i<sl.length;i++)d.appendChild(document.createElement('i'));
+  function upd(){var k=Math.round(t.scrollLeft/t.clientWidth);
+    [].forEach.call(d.children,function(x,j){x.className=j===k?'on':''});
+    p.disabled=k===0;n.disabled=k===sl.length-1}
+  p.onclick=function(){t.scrollBy({left:-t.clientWidth,behavior:'smooth'})};
+  n.onclick=function(){t.scrollBy({left:t.clientWidth,behavior:'smooth'})};
+  t.addEventListener('scroll',upd,{passive:true});upd();
+});
+</script>
+</body>
+</html>
+
+</body></html>
